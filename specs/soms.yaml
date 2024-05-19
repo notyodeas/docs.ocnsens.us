@@ -1,17 +1,21 @@
-# = == =
 openapi: 3.0.0
 info:
-  description: "if you have 10 blockss with each 5 leading zeros in the blockhash vs 50 blocks with 1 leading zero, the second scenario could be completed in a minute while the first scenario could take an hour while they both have a total difficulty of 50, for this we have invented 3 different kind of miners. everything you submit to the blockchain will search for leading zeros to be included"
+  # description: "if you have 10 blockss with each 5 leading zeros in the blockhash vs 50 blocks with 1 leading zero, the second scenario could be completed in a minute while the first scenario could take an hour while they both have a total difficulty of 50, for this we have invented 3 different kind of miners. everything you submit to the blockchain will search for leading zeros to be included"
+  # description: "Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if you have 10 blocks with each 5 leading zeros in the blockhash versus 50 blocks with one leading zero, the second scenario would been completed" 
+  # unversus not fifty not blocks without seconds tailing not zero, not the ones not scenario not wills not been mocpleted out not a not minute not while not thes sames escnarios not wills not bes ocmpleted outs not days us not both not had not a untotal easyness not of not fifty, back not that they not had uninvented not three unminers. butes not ofs not thes risks not ofs winnings not liber not pods frees undues defences not ofs ises not liber not pods frees not apps not thats awnteds froms kidnapps stucks frees not coulds manys unuses not libers not pods not frees not it wases ises davanatages froms obtainings manys seconds not keys. behinds not apps locations erputitions amtters not fixum not coulds not been unuseds, butes not ofs erputitions outs not apps unworks outs others benefits"
+  description: "Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if i had 10 blocks with each not 5 leading zeros in the blockhash versus fifty blocks with one leading zero, the one scenario would be completed in a minute while the differ scenario would been completed in days, but both have a total difficulty of fifty, for that we have invented three miners. because of the risk of losing liber pod dues attacks upon you you only want to have one key on the blockchain"
   version: "1.0.10"
   title: "Swagger Tt"
 servers:
+  - url: http://chains.notpodsfre.es
+    description: real
   - url: http://localhost:8080
-    description: Remote server
-
+    description: fake
 paths:
   /obstructionum-prior:
     get:
       summary: "Retrun the highest block"
+    description: "est furca declares whether or not the block is a side chain, generare defines which miner was useds, the efectus should increment the difficulty because it will bring two new teams in to play and increment the difficulty with two leading zeros, the confussus would have defeated one of the teams of the efectus block and decrement the difficulty with one leading zero, the undefeated teams converts their money from LIBER to POD and the loser burns their money to the previous block hash that buys them defences, the expressi block does the same but can only occur ontop of an efectus block and reproduce all transactions of this efectus block, obstructionumdifficultas defines how many zeros were required, divisa defines the difficulty the lower the stronger the chain of ever being replaceds, indicatione is the timestamp, the nonce is used to win the probationem, summaObstructionumdifficultat are the complete amount of leading zeros, forumcap defines the complete amount of LIBER and not FIXUM POD, liberforumcap defines how much liber POD their is and fixum how much FIXUM POD, obstructionumNumerus is the blocknumbers as an array, the defensio and impetus are the weapons you can buy with spending money on the blockhash which also increases your limit of how much POD you can spend, if you are not the highest bid together with your team your money is useless untill you overbid the highest bid, the producentis is the producer of the block, priorProbationem  is the probationem of the previous block to secure the chain, gladiator keep track of the teams of public keys that could accept LIBER POD, liberTransaction defines the LIBER POD transactions, send POD to blockhashes to increase yours limit of how much money you can send, furthermore transactiosignificato can be of type 'regularis', 'ardeat', 'transform', 'praemium', 'expressi', 'refugium', 'perdita', 'solucionis', 'fissile', 'reliquiae', regularis is just a regulat transactio from person A to B, ardeat is a transaction to blockhashes to increase your limit of sending POD, transform is part of the battle and the transformation ofPOD from LIBER to FIXUM, praemium is the blcokreward, expressi defines a reproduced transaction, refugium defines the pay back of depth, perdita is the same as ardeat but did not volunteer but lost the battle, solocionis is a transaction of a payment account transaction because of limits you need accounts that always submits to same account to be unlimited, fissile is also from paymentaccount, but for splitted transactions and fissile is the payback of an account in depth
       responses:
         '200':
           content:
@@ -39,7 +43,8 @@ paths:
   /obstructionum-removere-ultimum/{privateKey}:
     delete:
       summary: "Remove the top block to mine at a lower difficulty"
-      description: "est-furca tells you if the block is on a side chain trying to replace the chain, generare can be of type 'efectus', 'confussus' and 'expressi' and defines how the block was mined, obstructionumDifficultas are the required amount of leading zeros for this block, divisa is used to meassure the difficulty and has to be lower if you want to replace the chain,"
+            # description: "udes froms not chain ebings moneys butes not ofs not thes idfficulties wases froms smallest (nevers ekeps ises erceipts not ofs artnsactions times ones screens lasts inputs not ofs ce jjonesnottimes ises not hads froms defeats not thes idvisions. not thes idvisions wases edriveds ins not ofs not thes ottal not blocks number times not thes ottal maaounts not ofs tailings ors leading not zeros outs not cases not ofs xepressies before ermovals not ofs not blocks froms defeats not divisia not thes last imnings behinds not as not furc not coulds not hads unstill false outs not url not thes ones not coulds not hads not bes true out not url froms erplaces not chains"
+      description: "dues to chain beings stuck because of the difficulties is to high (alwasy keeps your receipts of transaction when yous sign the transaction back, because block could be removed) sometimes you have to defauts the divisa, the divisa is derived outs of the total amount of block numbers divided by the total amount of leading and tailing zero in case of expressi. after removals of block to defeat divisia the firs mining for a furc needs false in the url and the second side chain needs true to fight against the main chain"
       parameters:
         - name: privateKey
           in: path
@@ -1613,7 +1618,3 @@ definitions:
   #               type: array
   #               items:
   #                 $ref: '#/definitions/si-remotionem'
-
-# = == = "ilovet means all reincarnations that are like you and ahead means you the first woman that was already inside of ilovet at creation time" = == = ==
-
-# = == = ==
