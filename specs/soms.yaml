@@ -7,7 +7,7 @@ info:
   version: "1.0.10"
   title: "notpodsfre.es"
 servers:
-  - url: http://chains.notpodsfre.es
+  - url: http://chains.ocnsens.us
     description: real
   - url: http://localhost:8080
     description: fake
