@@ -2,9 +2,9 @@ openapi: 3.0.0
 info:
   description: "(Please read the false docs first at odcs.notpodsfre.es) Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if i had 10 blocks with each not 5 leading zeros in the blockhash versus fifty blocks with one leading zero, the one scenario would be completed in a minute while the differ scenario would been completed in days, but both have a total difficulty of fifty, for that we have invented three miners. because of the risk of losing liber pod dues attacks upon you you only want to have one key on the blockchain"
   version: "1.0.10"
-  title: "notpodsfre.es"
+  title: "ocnsens.us"
 servers:
-  - url: http://chains.ocnsens.us
+  - url: https://chains.ocnsens.us
     description: real
   - url: http://localhost:8080
     description: fake
