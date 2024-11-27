@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  description: "(Please read the false docs first at odcs.notpodsfre.es) Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if i had 10 blocks with each not 5 leading zeros in the blockhash versus fifty blocks with one leading zero, the one scenario would be completed in a minute while the differ scenario would been completed in days, but both have a total difficulty of fifty, for that we have invented three miners. because of the risk of losing liber pod dues attacks upon you you only want to have one key on the blockchain"
+  description: "Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if i had 10 blocks with each not 5 leading zeros in the blockhash versus fifty blocks with one leading zero, the one scenario would be completed in a minute while the other scenario would been completed in days, but both have a total difficulty of fifty, for that we have invented three miners and most important of all the divisia which is the blocknumber divided by the amount of leading zeros, if you manage the divisa to be lower and the total amount of leading zeros to be greater than the main chain due to removing blocks and three ways of mining you than the can replace the chain in which only the blockproducer is screwed due to every transactions that occured in a block even if the block was removed can be resubmitted with receipts that puts the account in depth untill the transaction is reproduced and the depth is payed only the block producer doesnt have a receipt of the LIBER POD that comes out of nothing he is the first transaction that also has a receipt  that have been removed and puts your account in depth. because of the risk of losing liber pod dues attacks upon you you only want to have one key on the blockchain because you have spent LIBER and FIXUM POD on weapons to also increase your limit of what you can spent if you have bought weapons for 250 POD you only can spent 250 POD in one transaction this limit is what you would lose if you throw your key away, furthermore you need 2 nodes to sync a block, because it is being validated on a random computer of the network and if you want to earn money your mining key has to be defended."
   version: "1.0.10"
   title: "ocnsens.us"
 servers:
@@ -71,7 +71,7 @@ paths:
         - name: fork
           in: path
           required: true
-          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second side way (afslag)"
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
           schema:
             type: string
         - name: privateKey
@@ -99,12 +99,12 @@ paths:
   /fossor-confussus/{fork}:
     post:
       summary: "Mine a confussus block and decrease the difficulty for the next block"
-      description: "Defeat a team of public keys transform all your teams money into fixum and burn all theirs to the (previous) blockhash"
+      description: "Defeat a team of public keys transform all your teams money into fixum and burn all theirs to the (previous) blockhash you can find the undefeaten gladiators at gladiator-invictos"
       parameters:
         - name: fork
           in: path
           required: true
-          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second side way (afslag)"
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
           schema:
             type: string
       requestBody:
@@ -150,7 +150,7 @@ paths:
         - name: fork
           in: path
           required: true
-          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second side way (afslag)"
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
           schema:
             type: string
       requestBody:
@@ -1170,7 +1170,7 @@ paths:
                   $ref: '#/definitions/solucionis-propter'
   /solucionis-cash-ex:
     post:
-      summary: "Cash out the payment account of POD to the receiver written in the blockchain, liber defines whether it should be a LIBER or FIXUM transaction and ex is the private key of the receiver / accipientis"        
+      summary: "Cash out the payment account of POD to the receiver written in the blockchain, liber defines whether it should be a LIBER or FIXUM transaction and ex is the private key of the solucionis"        
       requestBody:
         required: true
         content:

@@ -1,0 +1,1611 @@
+openapi: 3.0.0
+info:
+  description: "Welcome to notpodsfre.es a zero transaction fee blockchain solving a one leading zero attack, if i had 10 blocks with each not 5 leading zeros in the blockhash versus fifty blocks with one leading zero, the one scenario would be completed in a minute while the other scenario would been completed in days, but both have a total difficulty of fifty, for that we have invented three miners and most important of all the divisia which is the blocknumber divided by the amount of leading zeros, if you manage the divisa to be lower and the total amount of leading zeros to be greater than the main chain due to removing blocks and three ways of mining you than the can replace the chain in which only the blockproducer is screwed due to every transactions that occured in a block even if the block was removed can be resubmitted with receipts that puts the account in depth untill the transaction is reproduced and the depth is payed only the block producer doesnt have a receipt of the LIBER POD that comes out of nothing he is the first transaction that also has a receipt  that have been removed and puts your account in depth. because of the risk of losing liber pod dues attacks upon you you only want to have one key on the blockchain because you have spent LIBER and FIXUM POD on weapons to also increase your limit of what you can spent if you have bought weapons for 250 POD you only can spent 250 POD in one transaction this limit is what you would lose if you throw your key away, furthermore you need 2 nodes to sync a block, because it is being validated on a random computer of the network and if you want to earn money your mining key has to be defended, crypto.com is the onyl exchange i informed asides from gladiato.rs more than a year ago
+  version: "1.0.10"
+  title: "ocnsens.us"
+servers:
+  - url: https://chains.ocnsens.us
+    description: real
+  - url: http://localhost:8080
+    description: fake
+paths:
+  /obstructionum-prior:
+    get:
+      summary: "Retrun the highest block"
+      description: "est furca declares whether or not the block is a side chain, generare defines which miner was useds, the efectus should increment the difficulty because it will bring two new teams in to play and increment the difficulty with two leading zeros, the confussus would have defeated one of the teams of the efectus block and decrement the difficulty with one leading zero, the undefeated teams converts their money from LIBER to POD and the loser burns their money to the previous block hash that buys them defences, the expressi block does the same but can only occur ontop of an efectus block and reproduce all transactions of this efectus block, obstructionumdifficultas defines how many zeros were required, divisa defines the difficulty the lower the stronger the chain of ever being replaceds, indicatione is the timestamp, the nonce is used to win the probationem, summaObstructionumdifficultat are the complete amount of leading zeros, forumcap defines the complete amount of LIBER and not FIXUM POD, liberforumcap defines how much liber POD their is and fixum how much FIXUM POD, obstructionumNumerus is the blocknumbers as an array, the defensio and impetus are the weapons you can buy with spending money on the blockhash which also increases your limit of how much POD you can spend, if you are not the highest bid together with your team your money is useless untill you overbid the highest bid, the producentis is the producer of the block, priorProbationem  is the probationem of the previous block to secure the chain, gladiator keep track of the teams of public keys that could accept LIBER POD, liberTransaction defines the LIBER POD transactions, send POD to blockhashes to increase yours limit of how much money you can send, furthermore transactiosignificato can be of type 'regularis', 'ardeat', 'transform', 'praemium', 'expressi', 'refugium', 'perdita', 'solucionis', 'fissile', 'reliquiae', regularis is just a regulat transactio from person A to B, ardeat is a transaction to blockhashes to increase your limit of sending POD, transform is part of the battle and the transformation ofPOD from LIBER to FIXUM, praemium is the blcokreward, expressi defines a reproduced transaction, refugium defines the pay back of depth, perdita is the same as ardeat but did not volunteer but lost the battle, solocionis is a transaction of a payment account transaction because of limits you need accounts that always submits to same account to be unlimited, fissile is also from paymentaccount, but for splitted transactions and fissile is the payback of an account in depth"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/obstructionum'
+  /obstructionum-numerus:
+    post:
+      summary: "Return the block by its array of numbers"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: array
+              items: integer
+              example: [3]
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/obstructionum'
+  /obstructionum-removere-ultimum/{privateKey}:
+    delete:
+      summary: "Remove the top block to mine at a lower difficulty"
+            # description: "udes froms not chain ebings moneys butes not ofs not thes idfficulties wases froms smallest (nevers ekeps ises erceipts not ofs artnsactions times ones screens lasts inputs not ofs ce jjonesnottimes ises not hads froms defeats not thes idvisions. not thes idvisions wases edriveds ins not ofs not thes ottal not blocks number times not thes ottal maaounts not ofs tailings ors leading not zeros outs not cases not ofs xepressies before ermovals not ofs not blocks froms defeats not divisia not thes last imnings behinds not as not furc not coulds not hads unstill false outs not url not thes ones not coulds not hads not bes true out not url froms erplaces not chains"
+      description: "dues to chain beings stuck because of the difficulties is to high (alwasy keeps your receipts of transaction when yous sign the transaction back, because block could be removed) sometimes you have to defauts the divisa, the divisa is derived outs of the total amount of block numbers divided by the total amount of leading and tailing zero in case of expressi. after removals of block to defeat divisia the firs mining for a furc needs false in the url and the second side chain needs true to fight against the main chain"
+      parameters:
+        - name: privateKey
+          in: path
+          required: true
+          description: "The private key corresponding to the public key used on start up of the node"
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:
+                    type: string
+                    example: "remotus"
+                  message:
+                    type: string
+                    example: "removed"
+                  obstructionum:
+                    $ref: '#/definitions/obstructionum'
+  /fossor-efectus/{fork}/{privateKey}:
+    post:
+      summary: "Mine an efectus block and increase the difficulty for the next block"
+      description: "The difficulty is derived out the amount of undefeaten teams of public keys that fight with other miners across the network, the efectus miner will bring 2 new teams into play, so the next block will require 2 more leading zeros and press this button more often to increase the threads (default: 1), threads mine with the same nonce but a different timestamp, which will evolve in a different hash, restart the node if the threat calculator broke"
+      parameters:
+        - name: fork
+          in: path
+          required: true
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
+          schema:
+            type: string
+        - name: privateKey
+          in: path
+          required: true
+          description: "the private key that corresponds to the producentis argument on the node"
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: 
+                  nunitus:
+                    type: string
+                    example: "coepi efectus fossores"
+                  message:
+                    type: string
+                    example: "started efectus miner"
+                  threads:
+                    type: integer
+                    example: 1
+  /fossor-confussus/{fork}:
+    post:
+      summary: "Mine a confussus block and decrease the difficulty for the next block"
+      description: "Defeat a team of public keys transform all your teams money into fixum and burn all theirs to the (previous) blockhash you can find the undefeaten gladiators at gladiator-invictos"
+      parameters:
+        - name: fork
+          in: path
+          required: true
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:  
+          application/json: 
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                  example: "00d91f1d2d82c0dea170b2aa5d20b90e2dccd58bac4c5a2b79ae15bbf59e1b23c664562a7a950a1a0391d3df70dd9364ef6a8fd58939377c015cce801d07dbe44458"
+                victima:
+                  type: object
+                  properties:
+                    identitatis:
+                      type: string
+                      example: "87f39949506e62ebc53a593cf6a23d5176501a1b73dc565c04bf24cbf36eaa6567465f453c157e7b7e2a061fd7852cb0dcce6b1a6c9808af955b6e63e7780964"
+                    primis:
+                      type: bool
+                      example: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:
+                    type: string
+                    example: "coepi confussus miner"
+                  message:
+                    type: string
+                    example: "started confussus miner"
+                  threads:
+                    type: integer
+                    example: 1
+  /fossor-expressi/{fork}:
+    post:
+      summary: "Mine an expressi block and decrease the difficulty for the next block"
+      description: "Defeat a team of public keys transform all your teams money into fixum and burn all theirs to the (previous) blockhash, reproduce all LIBER transactions and can only occur on top of an efectus block"
+      parameters:
+        - name: fork
+          in: path
+          required: true
+          description: "set to false for regular mining, but if you are willing to try to replace the chain fork has to be true upon the second block of the side way (afslag)"
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:  
+          application/json: 
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                  example: "00d91f1d2d82c0dea170b2aa5d20b90e2dccd58bac4c5a2b79ae15bbf59e1b23c664562a7a950a1a0391d3df70dd9364ef6a8fd58939377c015cce801d07dbe44458"
+                victima:
+                  type: object
+                  properties:
+                    identitatis:
+                      type: string
+                      example: "87f39949506e62ebc53a593cf6a23d5176501a1b73dc565c04bf24cbf36eaa6567465f453c157e7b7e2a061fd7852cb0dcce6b1a6c9808af955b6e63e7780964"
+                    primis:
+                      type: bool
+                      example: true
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:
+                    type: string
+                    example: "coepi expressi miner"
+                  message:
+                    type: string
+                    example: "started expressi miner"
+                  threads:
+                    type: integer
+                    example: 1
+
+  /propter-novus:
+    get:
+      summary: "Create a new key pair on pod"
+      description: "the publicaclavis / public key is used to receive money and the privatusclavis / private key is used to send it"
+      responses:
+        '200':
+          description: "the public and private key"
+          content: 
+             application/json:
+                schema: 
+                  type: object
+                  properties: 
+                    publicaClavis:
+                      type: string
+                      example: "040051c9026e5309330e8176bc6c44acebc77cbce3ed7eaab1d4e44711d06800b8aabfd5d7848c86d59a734aefac8879eaccc8c5a75bd23ed100a882b8fdff0f50bf11018d3aedbe9d3faefde1bd40e7e1f08a496608cc0c389e72dd75f1d8a040c736f2a99acfb8515b911d309f9b41f0bdbad10481d6897cbdda786af2bf4c3bfe15b015"
+                    privatusClavis:
+                      type: string
+                      example: "0165e6c535de3642c7c53d903d40844a43914800cfbb3ef73ad721e9fbcb8798921a226b057512c5b440375dd48f402714576e7ccdd4e83a03e488c33404eb007f82"
+  /propter-submittere:
+    post:
+      summary: "Submit your public key to accept liber POD"
+      description: "To accept liber money your public key should be defended in a team with other public keys, because your pod might vanish if your team loses or be converted to fixum if your team wins, fixum POD will not vanish because of batteling, but if the chain gets replaced you need to have your receipt, you can be in the same team with whover you like, only these public keys have to choose you too or you will never be included, the publicaclaves array is optional, 'ex' is the private key and 'publicaclaves' are the keys you want to be in a team with, but if they dont sign you back you'll be waiting forever"
+      requestBody: 
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                publicaClaves: 
+                  type: array
+                  required: false
+                  items:
+                    type: string
+      responses:
+        '200':
+          description: "success message"
+  /propter-status/{publicKey}:
+    get:
+      summary: "Returns the status of your public key by public key"
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          description: "Public key used to receive POD"
+          scheme:
+            type: string
+      responses: 
+        '200':
+          description: "An overview of the status of your public key, wether or not it is included in a block or stil in the pool and some extra information"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: 
+                  data:
+                    type: object
+                    properties:
+                      includi:
+                        type: bool
+                        example: false
+                      indicatione: 
+                        type: integer
+                        example: "1708525547989759"
+                      obstructionumNumerus: 
+                        type: array
+                        items: integer
+                        example: [0]
+                      defensio:
+                        type: string
+                        example: "80"
+                      impetum:
+                        type: string
+                        example: "1f"
+                  scriptum:
+                    type: object
+                    properties:
+                      probationem:
+                        type: string
+                        example: "f3b4beb98133cf44281f5f4ee89da4bdf96c0d9c499f589b3a998aaef8e561b7f3654e30efaad9418c88c05f9b1300089a812e228e9138c8ae852e920a8fdc38"
+                      interiore:
+                        type: object
+                        properties:
+                          outputs:
+                            type: array
+                            items: 
+                              type: object
+                              properties:
+                                rationibus:
+                                  type: array
+                                  items: 
+                                    type: object
+                                    properties:
+                                      probationem:
+                                        type: string
+                                        example: "794adbc630fb2c401918f326eb5e539bcf17dca973583f758990ec1f7b5306db6c3a0ff2b5103db7a705fce5bf292b1b882987d73c70cfad6af253623b9f8dd8"
+                                      interiore:
+                                        type: object
+                                        properties:
+                                          publicaClavis:
+                                            type: string
+                                            example: "04001503ea2d14708b121e56c3d315de22e6df598902a6348c76c0793caf0f3bb65879a354be6b7e6262a7a57f5d3ea7db8152eedc6cc4152b9c0d446bb18a3646717400072e9e0f05a22ca4b198c5cd1e4e812aa3c71c19115b73a6969625b289b8a4418e8bac90e9ffebfbf584ccf2ea80f5f1a5ffa10da0e8e574426ffd41907f8d6725"
+                                          signature: 
+                                            type: string
+                                            example: "308187024200e3f99737249bcb5041da6e63a9905ab30dda72767dee35353373c887ddbd1c97a6911204fd2b70e8a9e9e386148123465ab4dfcfec5916fd02502e8cf3c3429687024134ae209b45da2a9dd91e9d82d30667b191c96c93dd3bf6687e4906a6a37e21e51eec6977922188b0ab312e64e21b76b7481ad9d72c3c6ae077afcd0371aac8f192"
+                                          nonce: 
+                                            type: integer
+                                            example: 0
+                                defensio: 
+                                  type: string
+                                  example: "80"
+                                impetum:
+                                  type: string
+                                  example: "1f"
+                          identitatis:
+                            type: string
+                            example: "612233db7c5781af80bb7824a83dcfd72192dadbe98dc289598c9d173aee1ea4d52b0db656a2b645f215eb5bfd6adb51f0a83411508fe1fc0bd5cdf404e6bb54"
+                  gladiatorIdentitatis:
+                    type: string
+                    example: "f156d940f7aa7e3089605f460574cdd408862963134b1199cee39ad9cf9e8e5d6c84b7d4a6a1e5072ee5a78c88aff54a6b730d91b826def957f2663cb8eb2f21"
+  /propter-stagnum:
+    get:
+      summary: "Get all submitted public keys that are ready to be included in a block"
+      description: "To accept liber money or to mine an confussus or an expressi block you need to be included in a block your key can get defeated which would make you lose all your liber money and you would have to resubmit your key to obtain all priveledges again"
+      responses: 
+        '200':
+          description: "A list of all public keys ready to be included"
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    probationem:
+                      type: string
+                      example: "00000d44a7b213f5c9578c9515ab9dd7d1072884c174111c7b8e4bf342edf72cdfe7fae0a88fd96e1d0ea39abb614117e243152e119303edac7323e31309da0f"
+                    interiore:
+                      type: object
+                      properties:
+                        publicaClavis:
+                          type: string
+                          example: "040175afc6c3ebdc849f7ae7e06214c5bb33a87bbd534b5dce24b990b0e7078a40953a93236355550833100db2a14f7ecafb2155298d4ddc60e355491d4d11a4c8ae84018a102fbdaeef260861ec7da15a30dc5a6a3bc5b5adae9008f6b84d7a7eb61478f8a9391183f6500b8e5e9feabae81c2ead748c4eb5f1b2c916d972f0d6e2882152"
+                        signature:
+                          type: string
+                          example: "30818602417cbeb230e2528ad2b55d721ccf2e8da8bad858776a657ba625d38f8fb102ad45c61afe48914e3becf5e150f7f48a6682ed318552fa1190ad90d39025fbe2c13daf02411a218ab28db3866cffa6645597e297a7bde83cb859ccd550e629e05bf2e67bcf91c3f1077cc1707bccbd403418e7a27348c576c89f86c2ca48f478568019629eb0"
+                        quadrigis:
+                          type: string
+                          example: "NOT SUPPORTED YET"
+                        nonce:
+                          type: string
+                          example: "131562"
+  /propter-public/{privateKey}:
+    get:
+      summary: "Returns the public key that belongs to the private key"
+      parameters:
+        - name: privateKey
+          in: path
+          required: true
+          description: "Private key POD"
+          scheme:
+            type: string
+      responses:
+        '200':
+          description: "The public key"
+          content:
+            application/json:
+              schema:
+                type: string
+                example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95" 
+  /propter-habet-bid/{publicKey}:
+    get:
+      summary: "The total amount spend of this public key on blockhashes that buy you weapons"
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          description: "Public key POD"
+          scheme:
+            type: string
+      responses:
+        '200':
+          description: "The total LIBER and FIXUM POD amount"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  liber:
+                    type: string
+                    example: "0"
+                  fixum: 
+                    type: string
+                    example: "0"
+  /gladiator-invictos:
+    get:
+      summary: "Returns all undefeaten gladiators and their base weapons which you can attack to produce a block, for that you will need the identitatis and primis"
+      responses:
+       '200':
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                type: object
+                properties:
+                  identitatis:
+                    type: string
+                    example: "d63275a91bb634569ec912cf73dd761aab34fb1217ed8159c2ba05de8df005e1bf051a5b5920e9a2b11df2c2a5ba1f285ee58860fb8c066386f56288b92818eb"
+                  output:
+                    type: object
+                    properties: 
+                      rationibus:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            probationem:
+                              type: string
+                              example: "000000873c251a097a0c30d5b903888472974a4385cbbbb61d7d190e8cf1fb264aacd4f7c2cb51a40ffbaf027e62318a7767c9722a75f2475aa16f3b8bd5d4b8"
+                            interiore:
+                              type: object
+                              properties:
+                                publicaClavis: 
+                                  type: string
+                                  example: "0401e5d03ee3c511551eb00ad237eeff3d5099b2bd934e5c8227c6eb9b0205c0aa500697f813cd15ffb8cf8b816f8bb9f05a279206c39531d6ae84319165113e61e126007f237e285539faa910222df28a6404273a4a977a228c9c3046bcdff90b73d43fea8941747a1ad95f9355f7fc74626d4034fd3082b2b448cff6cbfe0ab471975be9"
+                                signature:
+                                  type: string
+                                  example: "3081870241216637a4d2c7d62b22d996e1a1565f2d13b9c7fcee36154a26a62a6d7635e105afb420752b9c4818dcce6d2433fff7fbfa4544ec8cbcb48031943244035386796b024200a39976a6ad4393210f3e31ad1def952069fdb13bf76aad6199f65bc862801816b9f959c780914be35d52b38fb3168ae3cb956fbf8a94b0639b6a6d043c8ef61f8d"
+                                nonce:
+                                  type: string
+                                  example: "4638230"
+                      defensio:
+                        type: string      
+                        example: "43"
+                      impetum:
+                        type: string
+                        example: "0e"
+                  primis: 
+                    type: bool
+                    example: true
+  /gladiator-defenditur/{publicKey}:
+    get:
+      summary: "Returns whether or not the public key is defended"
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          description: "Public key POD"
+          scheme:
+            type: string       
+      responses:
+       '200':
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                defenditur:
+                  type: bool
+                  example: false
+                nuntius:
+                  type: string
+                  example: "the public key is protected"
+                message:
+                  type: string
+                  example: "publica clavis defenditur"
+  /gladiator-arma/{publicKey}:
+    get:
+      summary: "Returns the weapons of the public key in his current team, how much he has payed and how much his team has payed for them"
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          description: "Public key that owns the defences of POD"
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  basis-defensio:
+                    type: string
+                    example: "39"
+                  basis-impetum:
+                    type: string
+                    example: "f9"
+                  gladiator-defensiones-liber:
+                    type: array
+                    items: 
+                      $ref: '#/definitions/armad'
+                  gladiator-defensiones-fixum:
+                    type: array
+                    items: 
+                      $ref: '#/definitions/armad'
+                  gladiator-impetum-liber:
+                    type: array
+                    items:
+                      $ref: '#/definitions/armai'
+                  gladiator-impetum-fixum:
+                    type: array
+                    items:
+                      $ref: '#/definitions/armai'
+  /gladiator-summa-bid-arma/{probationem}:
+    get:
+      summary: "Returns the greatest bid that owns the weopons of a block and probationem means blockhash"
+      parameters:
+        - name: probationem
+          in: path
+          required: true
+          description: "The probationem is the blockhash that has the weapons in his block"
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  probationem:
+                    type: string
+                    example: "0825f2f083856d3b0b4e8008f270868ee94327d3d4de181b854838d297f52ee2c54548073e264c49e7c9b29e2efd26fcfb23f8cc82641357dca4ed2532f2348d"
+                  summa-bid:
+                    type: string
+                    example: "100000000000"
+                  obstructionum-arma:
+                    type: object
+                    properties:
+                      defensio:
+                        type: array
+                        items:
+                          type: string
+                          example: "[56]"
+                      impetus:
+                        type: array
+                        items:
+                          type: string
+                          example: "[7c,c0]"
+        '400':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                    example: 0
+                  nuntius:
+                    type: string
+                    example: "probationem non inveni"
+                  message:
+                    type: string
+                    example: "proof not found"
+  /submittere-transactio-liber:
+    post:
+      summary: "Submit a transaction to transfer LIBER POD from one to another"
+      description: "You can either send to public keys to transfer POD or send to blockhashes to increase your limit of what you can send of POD"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                  example: "01f7b7243c3aeeb5b28a05e50391ed71a0d1594fb1fec416d0346569dec595fa67ac6f853f31293f9bc261bceee32242844be35d87172875b9ebca9c573d89f6c6b5"
+                to:
+                  type: string
+                  example: "04012855b070408b4fb1a6e8210c4054bbfb990f52a404809fcf02afa5629703476c9ca5397a6bfc30dc70f2a071d30a9c962b80dc9c7dfad2fad2b8fe1ed0e587fcd501481a3486b2c3fb835e7a53b12ae9ccc420c4c352ddca4e4f76070f53d9c30239046bf5a1cd49e45428d2afdd3afb2c8a0d696b22b9b58373b0a01cfed933809a76"
+                pod:
+                  type: string
+                  example: "7630"
+      responses:
+        '200':
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  liber:
+                    type: bool
+                    example: true
+                  identitatis:
+                    type: string
+                    example: "4dcf28ef95a517635219a42860ef8bf81bffa75fbc6e4a3cf448644403cd9d78c39a4929abec3146d2a0f0c3955935b9daffab7ef09756812082bd6dca1d4c97"
+  /submittere-transactio-fixum:
+    post:
+      summary: "Submit a transaction to transfer FIXUM POD from one to another"
+      description: "You can either send to public keys to transfer POD or send to blockhashes to increase your limit of what you can send of POD"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                  example: "01f7b7243c3aeeb5b28a05e50391ed71a0d1594fb1fec416d0346569dec595fa67ac6f853f31293f9bc261bceee32242844be35d87172875b9ebca9c573d89f6c6b5"
+                to:
+                  type: string
+                  example: "04012855b070408b4fb1a6e8210c4054bbfb990f52a404809fcf02afa5629703476c9ca5397a6bfc30dc70f2a071d30a9c962b80dc9c7dfad2fad2b8fe1ed0e587fcd501481a3486b2c3fb835e7a53b12ae9ccc420c4c352ddca4e4f76070f53d9c30239046bf5a1cd49e45428d2afdd3afb2c8a0d696b22b9b58373b0a01cfed933809a76"
+                pod:
+                  type: string
+                  example: "7630"
+      responses:
+        '200':
+          description: ""
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  liber:
+                    type: bool
+                    example: false
+                  identitatis:
+                    type: string
+                    example: "4dcf28ef95a517635219a42860ef8bf81bffa75fbc6e4a3cf448644403cd9d78c39a4929abec3146d2a0f0c3955935b9daffab7ef09756812082bd6dca1d4c97"
+  /transactio-stagnum-liber:
+    get:
+      summary: "Returns all liber transaction of LIBER POD in the pool, transactions that are waiting to be included in a block"
+      description: "You can send money to public keys to transfer LIBER POD or blockhashes to increase your limit of send LIBER POD"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: 
+                    probationem:
+                      type: string
+                      example: "8d374e1655fd1968acf435cf86d937c1f1a839a76b83e3ab676aff61f4b5355a7dd561d729231c7ad0671fa70638377519ec592158705efe0657161889a11384"
+                    interiore:
+                      type: object
+                      properties:
+                        liber:
+                          type: bool
+                          example: true
+                        transactioSignificatio:
+                          type: string
+                          example: "regularis"
+                        inputs:
+                          type: array
+                          items: 
+                            type: object
+                            properties:
+                              index: 
+                                type: integer
+                              signature:
+                                type: string
+                                example: "308188024201939b6871ce351f5a4c99dbe978d0ee56a6a17948bd462ea2310bbfae8bf03ce40a42d567062308f061d6a582484285a662804551f430532aa90bab36c5419f04da0242008d94f3975c7062e808cf6336b050d9d28ac1ee9570549f5e6f2b759fb89e19e118d8e21cf3216233792873b860304c24720db085568f205ed3be60682ff514e1c0"
+                              transactioIdentitatis:
+                                type: string
+                                example: "1dbc6e8207600baa55c9114217bb0fdc97a193457006dce2b508d7ce87b5c37beb7cb7b6d007345d5c181db21c4fe2acdf725b364d3ab39a2d6796d7536ebb72"
+                        outputs:
+                          type: array
+                          items:  
+                            type: object
+                            properties:
+                              publicaClavis:
+                                type: string
+                                example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                              pod:
+                                type: string
+                                example: "7630"
+                        identitatis:
+                          type: string
+                          example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                        dominus:
+                          type: string
+                          example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                        recipiens:
+                          type: string
+                          example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                        nonce:
+                          type: string
+                          example: "0"
+                        si-remotionem:
+                          type: object
+                          properties:
+                            probationem:
+                              type: string
+                              example: "7b1b46d2bc2dbea927b4a6219587b7c79741f90104f9efe8a9ee11acf14a838c7178ce1666a00f87d060ab43590ac8484e4524ac812831d525e088d42d90c728"
+                            interiore:
+                              type: [null, object]
+                              properties: 
+                                si-remotionem-input:
+                                  type: object
+                                  properties:
+                                    signature-input: 
+                                      type: string
+                                      example: "308188024201a19fcb3e735687825282a443596b3c6e502d6d4c8b0c54a87d23aa8b4e4debc2d90fdea8f6e6dcb983e1d3e691f62426ff3101d1cd69d74dd1802d6547e75a0444024200b68ca26aab5dd4fb2ae5be02da45a58365d1ecbcc1a89f38bccdf77c21e76421e5a58894465f05d47986070d113bf8675c3d30f1a836807987b29443f208fd8d5b"
+                                    si-remotionem-signature:
+                                      type: string
+                                      example: "30818702411d823a6e81d994af940e4e571f716f1f7e722552583c4a2b43d960586efb895941784a1d3be29f91e18680aaf50bdadbafe013be0fe93bbb0c9fd924862249f1310242019a05711d3fb77b88c02465e51ace531f0e1d74d007318f7dc5b4d3a86f5f8df8e14a4a844bbbc409f5f9757634ee135dbd46412c30f0faedab153b208cf8527768"
+                                    transactioIdentitatis:
+                                      type: string
+                                      example: "bd33d89458540115d512b94c66b37a007527e83c2030b7c1ac413e8c4ea7a1a2b6b162ed35ccb1d1ebdfe6f522f6ebd1865bcae50da1268144eb6716b28c6dc3"
+                                    interioreTransactio:
+                                      type: [null, object]
+                                      properties: 
+
+                                si-remotionem-output: 
+                                  type: object
+                                  properties:
+                                    liber:
+                                      type: bool
+                                      example: true
+                                    habereIus:
+                                      type: string
+                                      example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                                    debetur:
+                                      type: string
+                                      example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                                    transactioIdentitatis:
+                                      type: string
+                                      example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                                    pod: 
+                                      type: string
+                                      example: "7630"
+                                siganture-interiore-si-remotionem:
+                                  type: string
+                                  example: "30818602413d66dbd31f5a9b8c0584f52ecdb7cc4340ce5e4b281aad1fc79f5bcb82786cf74938a41a0935999dea3a35b86fd48b9cb6fde8744911a3a9116bce9ed1cf42d62f02411ad57876352bae73810a0a321f204fe2f0128b9e73e9bf4a9691de92342c832ec321a03dae856e2f175f10022a8aa61e0981e8cacf959a87950bfa6e04bcab8551"
+                                nonce:
+                                  type: string
+                                  example: "0"
+  /transactio-stagnum-fixum:
+    get:
+      summary: "Returns all liber transaction of FIXUM POD in the pool, transactions that are waiting to be included in a block"
+      description: "You can send money to public keys to transfer FIXUM POD or blockhashes to increase your limit of send FIXUM POD"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: 
+                    probationem:
+                      type: string
+                      example: "8d374e1655fd1968acf435cf86d937c1f1a839a76b83e3ab676aff61f4b5355a7dd561d729231c7ad0671fa70638377519ec592158705efe0657161889a11384"
+                    interiore:
+                      type: object
+                      properties:
+                        liber:
+                          type: bool
+                          example: false
+                        transactioSignificatio:
+                          type: string
+                          example: "regularis"
+                        inputs:
+                          type: array
+                          items: 
+                            type: object
+                            properties:
+                              index: 
+                                type: integer
+                              signature:
+                                type: string
+                                example: "308188024201939b6871ce351f5a4c99dbe978d0ee56a6a17948bd462ea2310bbfae8bf03ce40a42d567062308f061d6a582484285a662804551f430532aa90bab36c5419f04da0242008d94f3975c7062e808cf6336b050d9d28ac1ee9570549f5e6f2b759fb89e19e118d8e21cf3216233792873b860304c24720db085568f205ed3be60682ff514e1c0"
+                              transactioIdentitatis:
+                                type: string
+                                example: "1dbc6e8207600baa55c9114217bb0fdc97a193457006dce2b508d7ce87b5c37beb7cb7b6d007345d5c181db21c4fe2acdf725b364d3ab39a2d6796d7536ebb72"
+                        outputs:
+                          type: array
+                          items:  
+                            type: object
+                            properties:
+                              publicaClavis:
+                                type: string
+                                example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                              pod:
+                                type: string
+                                example: "7630"
+                        identitatis:
+                          type: string
+                          example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                        dominus:
+                          type: string
+                          example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                        recipiens:
+                          type: string
+                          example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                        nonce:
+                          type: string
+                          example: "0"
+                        si-remotionem:
+                          type: object
+                          properties:
+                            probationem:
+                              type: string
+                              example: "7b1b46d2bc2dbea927b4a6219587b7c79741f90104f9efe8a9ee11acf14a838c7178ce1666a00f87d060ab43590ac8484e4524ac812831d525e088d42d90c728"
+                            interiore:
+                              type: object
+                              properties: 
+                                si-remotionem-output: 
+                                  type: object
+                                  properties:
+                                    liber:
+                                      type: bool
+                                      example: false
+                                    habereIus:
+                                      type: string
+                                      example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                                    debetur:
+                                      type: string
+                                      example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                                    transactioIdentitatis:
+                                      type: string
+                                      example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                                    pod: 
+                                      type: string
+                                      example: "7630"
+                                siganture-interiore-si-remotionem:
+                                  type: string
+                                  example: "30818602413d66dbd31f5a9b8c0584f52ecdb7cc4340ce5e4b281aad1fc79f5bcb82786cf74938a41a0935999dea3a35b86fd48b9cb6fde8744911a3a9116bce9ed1cf42d62f02411ad57876352bae73810a0a321f204fe2f0128b9e73e9bf4a9691de92342c832ec321a03dae856e2f175f10022a8aa61e0981e8cacf959a87950bfa6e04bcab8551"
+                                nonce:
+                                  type: string
+                                  example: "0"                                
+  /transactio-stagnum-expressi:
+    get:
+      summary: "Returns all expressi transaction of LIBER POD in the pool, transactions that will only be included in case of an expressi block"
+      description: "An expressi block can only occur on top of an efectus block"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties: 
+                    probationem:
+                      type: string
+                      example: "d2ba4d8bbe38c9d4f8bacea5bac9d0c7e465bcd1d8b4d40d79700e59fbb82f8a2a8eb818da6bff462b1156be81f57ad1c575fa34f3f0b2f784cfc106f7fc9310"
+                    interiore:
+                      type: object
+                      properties:
+                        liber:
+                          type: bool
+                          example: true
+                        transactioSignificatio:
+                          type: string
+                          example: "expressi"
+                        inputs:
+                          type: array
+                          items: 
+                            type: object
+                            properties:
+                              index: 
+                                type: integer
+                                example: 1
+                              signature:
+                                type: string
+                                example: "30818802420179906c2913415cbfea7dc6022404cb390313c7f93939e6d81b4b0ea2ddca90216e49ba15642b5fbe1f538f6a5896794ea509c139e2608c1129df78ba114f4301c4024200e2410474feff8d5aab2a0bc64a8eb0c7af1e02e54f76ca0fcc3b56386b520af879eea57560addc90aba268048f67a62aead7ad2f270e792949baef7a538ba8ec9a"
+                              transactioIdentitatis:
+                                type: string
+                                example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                        outputs:
+                          type: array
+                          items:  
+                            type: object
+                            properties:
+                              publicaClavis:
+                                type: string
+                                example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                              pod:
+                                type: string
+                                example: "7630"
+                        identitatis:
+                          type: string
+                          example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                        dominus:
+                          type: string
+                          example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                        recipiens:
+                          type: string
+                          example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                        nonce:
+                          type: string
+                          example: "0"
+                        si-remotionem:
+                          type: object
+                          properties:
+                            probationem:
+                              type: string
+                              example: "7b1b46d2bc2dbea927b4a6219587b7c79741f90104f9efe8a9ee11acf14a838c7178ce1666a00f87d060ab43590ac8484e4524ac812831d525e088d42d90c728"
+                            interiore:
+                              type: object
+                              properties: 
+                                si-remotionem-output: 
+                                  type: object
+                                  properties:
+                                    liber:
+                                      type: bool
+                                      example: true
+                                    habereIus:
+                                      type: string
+                                      example: "0401c48e26c7a0f0d0d95a31029078f7f93035e89c79f88cc2bd44cc145633115635b64eec15d54761e59b0489fcbb598bd6633a255317781e48c374a586a1c0ae3732001408807a79191a9dc481d74a85d0d7789a3ba2db48df6ec8dda25e02e3c8e5d1acad4133e2aed62213c79409a9edba1eea96920ea6624026acf5dd72a18e75b3e2"
+                                    debetur:
+                                      type: string
+                                      example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                                    transactioIdentitatis:
+                                      type: string
+                                      example: "6bebf512a7fd8ecd8af0e0816c4a90140d534cd33dd7b6d7f1c9ef6c95c04f0feaf31ac939e49534f1d29b289e07bf0daff25c29d57810c70f7a8b55de994cd1"
+                                    pod: 
+                                      type: string
+                                      example: "7630"
+                                siganture-interiore-si-remotionem:
+                                  type: string
+                                  example: "30818602413d66dbd31f5a9b8c0584f52ecdb7cc4340ce5e4b281aad1fc79f5bcb82786cf74938a41a0935999dea3a35b86fd48b9cb6fde8744911a3a9116bce9ed1cf42d62f02411ad57876352bae73810a0a321f204fe2f0128b9e73e9bf4a9691de92342c832ec321a03dae856e2f175f10022a8aa61e0981e8cacf959a87950bfa6e04bcab8551"
+                                nonce:
+                                  type: string
+                                  example: "0"
+  /transactio/{identitatis}:
+    get:
+      summary: "Returns the status of a paticular transaction"
+      description: "Returns the status of a paticular transaction, includi means whether or not the transaction is included in a block, confirmationes means how many blocks the transaction has been included, priorTransactionIdentitatum are the transaction ids untill praemium/reward, indicatione is the timestamp of the transaction, obstructionumNumerus is the blocknumber of the transaction and scriptum the raw transaction data written to the block"
+      parameters:
+        - name: identitatis
+          in: path
+          required: true
+          description: "The identitatis is the identity of the transaction"
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: 
+                  data:
+                    type: object
+                    properties:
+                      includi:
+                        type: bool
+                        example: false
+                      confirmationes:
+                        type: string
+                        example: "0"
+                      priorTransactioIdentitatum:
+                        type: array
+                        items: string
+                        example: ["75d059a0cab0ae2abfbfad6a019730ed763cdd872e1e80e867c18649a1138219545ded3e5110f00558b580570235c18b85416af637b13d09f59540dca1c75fc0", "ddb2d0a9fd5e19b1d132445c24da09d1012124eb723fa33dd16e7224b73b5d5f874deee81c9171a06e3f0aca451a1c3d3312b5e7ec9078bcbb4411663ee1859e"]
+                      indicatione: 
+                        type: integer
+                        example: 1709291063642024
+                      obstructionumNumerus:
+                        type: array
+                        items: integer
+                        example: [2]
+                  scriptum:
+                    type: object
+                    properties:
+                      probationem:
+                        type: string
+                        example: "7e8338be4e57c4e1fc0e442ad84a0150dd40acfe7b002e3bc0024202c6d6ae63726c6783f2f992861c47ff33b688b3d71797d4fb12de83539d9d9f64e547a9e1"
+                      interiore:
+                        type: object
+                        properties:
+                          liber:
+                            type: bool
+                            example: true
+                          transactioSignificatio:
+                            type: string
+                            example: "transform"
+                          inputs:
+                            type: array
+                            items: 
+                              $ref: '#/definitions/transactioninput'
+                          outputs:
+                            type: array
+                            items: 
+                              $ref: '#/definitions/transactionoutput'
+                          identitatis:
+                            type: string
+                            example: "394cd4e44e4e6d36f957faa015f0d91e5802164b61620b2a31e837a56db39740487cc2b1dc29e905f50f42ad012d1ee6c81a7614c9361c17a0c5bdee615d0097"
+                          dominus:
+                            type: string
+                            example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+                          recipiens:
+                            type: string
+                            example: "0009ed797566211aaeee550bf3d0663760ad7752972651da8ceaf1d45206cb93b1e6dbba608f254dfc2e632c070b47f5ff977243ccf7ab995f88d0707b63c547"
+                          nonce:
+                            type: string
+                            example: "10034"
+  /statera/{publicKey}:
+    get:
+      summary: "Return the balance of LIBER and FIXUM POD"
+      parameters:
+        - name: publicKey
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties: 
+                  liber:
+                    type: string
+                    example: "0"
+                  fixum:
+                    type: string
+                    example: "0"
+  /si-remotiones-submittere-proof:
+    post:
+      summary: "Sign the transaction as the receiver to have it included in a block"
+      description: "In the request body you will need ex which is the private key of the account, liber whether or not it has been liber transaction and identitatis the ID of the transaction"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ex:
+                  type: string
+                  example: "01f844f44e49eefd37538354a0db0917b57d4cdab023b618aa320d108609d9e9ef5ce01854a3b0d1425e9830aee2334eb34ff62f55050d5d309bb598ad696e3f339b"
+                interiore:
+                  type: object
+                  properties:
+                    liber:
+                      type: bool
+                      example: true
+                    identitatis:
+                      type: string
+                      example: "3a0fcdddf0ebbb83e332b925903d3cd326c815a00cf98b4f6f33687fecfd7a581bf848d7a155ae2679d23adfe62773e332e87332b69abfe6e18845558aad90bd"
+      responses:
+        '200':  
+          content:
+            application/json:
+              schema:
+                $ref: '#/definitions/receipt'
+  /si-remotiones-denuo-proponendam:
+    post:
+      summary: "Submit your receipt after removal of a transaction"
+      requestBody: 
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/definitions/receipt'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:  
+                    type: string
+                    example: "tuum remotum res exspectat prioritas piscinae"
+                  message:
+                    type: string
+                    example: "your removed transaction is waiting in the priority pool"
+              # could you have a duplicate tx if you submit the receipt before the tx gets included i mean youu would only put the account in depth but i have to test
+  /si-remotiones-stagnum:
+    get:
+      summary: "Return the objects that will put public keys in depth"
+      description: "Transactions can get removed due to block removal trying to replace the chain, but if you have your receipt you can put these public keys in depth, so they can no longer submit transactions before they have payed of the depth to your public key"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/definitions/si-remotionem'
+  /profundum-debita-habereius/{depths}/{publicKey}:
+    get:
+      summary: "Return the depth you have or own / have to be payed"
+      description: "If depths is true it will return your depths and if false returns the depth that have to pay you"
+      parameters:
+        - name: depths
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: publicKey
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/definitions/si-remotionem' 
+  /profundum-retribuere:
+    post:
+      summary: "Pay of your depth"
+      description: "Ex is your private key and signature should be of the si remotionem"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: 
+              type: object
+              properties:
+                ex: 
+                  type: string
+                  example: "00d91f1d2d82c0dea170b2aa5d20b90e2dccd58bac4c5a2b79ae15bbf59e1b23c664562a7a950a1a0391d3df70dd9364ef6a8fd58939377c015cce801d07dbe44458"
+                signature:
+                  type: string
+                  example: "30818702420172f0bf9562fe63eb2dc812d2f7b9eccf769518f53dc975bb278696c88e031b11a9972e72e3d15a46117e78c2a8c7a736d7143be8c79a86826f0373fb1f1459b45d02410936da069a9d10eab7f0675c4412be1e89b6150d45e58dc3a31e14d06044a4d313dfb19af15b858fdfb4789411aacaf4c942882a5b23ad7262b36c72c16933ffb5"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:
+                    type: string
+                    example: "tuum debth negotium exspectat in stagnum"
+                  message:
+                    type: string
+                    example: "your debth transaction is waiting in the pool"
+  /solucionis-submittere-solocionis-propter:
+    post:
+      summary: "Create a one way payment key"
+      description: "Because of limits on account transfers you can create payment keys that always have the same receiver(s) but no limits solucionis should acceept the money, check if the required balance is their and send through to the accipientis"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: 
+              type: object
+              properties:
+                solucionis:
+                  type: string
+                  example: "000d5eccd00c1ffd507c57097ccb2fd1e20912a3429aef1456ee997d7fa6ac0134d5dad4bb713de7862c8c50e44b46a8db5acc112db72321833662d5ac42ba917aea"
+                accipientis:
+                  type: string
+                  example: "0401bc395ad2da1be7fb24c7df9d3f2b8a1c850030d163911cf026ae71d500d00d1d84091da5298f21c63b21769e0d4fa8477071a09b18a462370d1c4a1510537e5194006f984be5f3dd25a8da0a2d38dfa54bfe421f6ede012fed310380222668fef7b506967c43c3b1ad9917851c8054adf7714d89f2483a35d5695d9cd17228e09d0c48"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius: 
+                    type: string
+                    example: "solucionis ratio exspectat in stagnum"
+                  message:
+                    type: string
+                    example: "payment account is waiting in the pool"
+  /solucionis-stagnum:
+    get:
+      summary: "Returns one way payment keys waiting in the pool to be included in a block"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#/definitions/solucionis-propter'
+  /solucionis-cash-ex:
+    post:
+      summary: "Cash out the payment account of POD to the receiver written in the blockchain, liber defines whether it should be a LIBER or FIXUM transaction and ex is the private key of the receiver / accipientis"        
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                liber:
+                  type: bool
+                  example: true
+                ex:
+                  type: string
+                  example: "000d5eccd00c1ffd507c57097ccb2fd1e20912a3429aef1456ee997d7fa6ac0134d5dad4bb713de7862c8c50e44b46a8db5acc112db72321833662d5ac42ba917aea"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius: 
+                    type: stirng
+                    example: "success message"
+  /solucionis-submittere-fissile-solocionis-propter:
+    post:
+      summary: "Create a multiple way payment key"
+      description: "Because of limits on account transfers you can create payment keys that always have the same receiver(s) but no limits solucionis given as private key should acceept the money, check if the required balance is their and send through to the accipientis public key and relique the public key will have all left over money, because fixus are set amount transfers"
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                solucionis:
+                  type: string
+                  example: "000d5eccd00c1ffd507c57097ccb2fd1e20912a3429aef1456ee997d7fa6ac0134d5dad4bb713de7862c8c50e44b46a8db5acc112db72321833662d5ac42ba917aea"
+                reliquiae:
+                  type: string
+                  example: "040025dc430dcc25436f606063a97bc10c4a8cc04eb506c4fc5796c6453d7e96d5a2f024a7fa6f0d8bc2b21b6ceca2d1d527c55f671533d0b91d51a790396eaaf6108101aac4e49bf38a44d13ee1af10b632ccc006b88d431fe1d295b44d958f348a68f7c62950f479c8ef70120fa5444d5c3e942ff0544c79d3cf9088d352f0e16e323043"
+                fixs:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      pod:
+                        type: string
+                        example: "1000"
+                      accipientis:
+                        type: string
+                        example: "040025dc430dcc25436f606063a97bc10c4a8cc04eb506c4fc5796c6453d7e96d5a2f024a7fa6f0d8bc2b21b6ceca2d1d527c55f671533d0b91d51a790396eaaf6108101aac4e49bf38a44d13ee1af10b632ccc006b88d431fe1d295b44d958f348a68f7c62950f479c8ef70120fa5444d5c3e942ff0544c79d3cf9088d352f0e16e323043"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius:
+                    type: string
+                    example: "splitted mercedem ratio exspectat in stagnum"
+                  message:
+                    type: string
+                    example: "splitted payment account is waiting in the pool"
+  /solucionis-fissile-stagnum:
+    get:
+      summary: "Returns multi way payment keys waiting in the pool to be included in a block"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: 
+                type: array
+                items:
+                  $ref: '#/definitions/fissile-solucionis-propter'    
+  /solucionis-fissile-cash-ex:
+    post:
+      summary: "Cash out the payment account of POD to the receivers written in the blockchain, liber defines whether it should be a LIBER or FIXUM transaction and ex is the private key of the receiver / accipientis"        
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                liber:
+                  type: bool
+                  example: true
+                ex:
+                  type: string
+                  example: "000d5eccd00c1ffd507c57097ccb2fd1e20912a3429aef1456ee997d7fa6ac0134d5dad4bb713de7862c8c50e44b46a8db5acc112db72321833662d5ac42ba917aea"
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nuntius: 
+                    type: stirng
+                    example: "success message"
+  /network-nodorum:
+    get:
+      summary: "Retruns the connected computers to this computer"
+      responses:
+       '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: string
+                example: "[127.0.0.1:8008]"
+  /download/{i}:
+    get:
+      summary: "Download the blockchain at the index"
+      description: "Index 0 will return all blocks from the obstructionumNumerus array, so in case of [500, 5]: index 0 will return 500 blocks"
+      
+          
+                            
+definitions: 
+  obstructionum:
+    type: object
+    properties:
+      interiore:
+        type: object
+        properties:
+          est-furca:
+            type: bool
+            example: false
+          generare:
+            type: string
+            example: "efectus"
+          obstructionumDifficultas:
+            type: integer
+            example: 3
+          divisa:
+            type: string
+            example: "1.0"
+          indicatione: 
+            type: integer
+            example: 1709363808410712
+          nonce:
+            type: string
+            example: "6125"
+          summaObstructionumDifficulatas:
+            type: string
+            example: "2"
+          forumCap:
+            type: string
+            example: "1526000000000000000000"
+          liberForumCap:
+            type: string
+            example: "1526000000000000000000"
+          fixumFormCap:
+            type: string
+            example: "0"
+          obstructionumNumerus:
+            type: string
+            example: [2]
+          defensio:
+            type: array
+            items: string
+            example: "14"
+          impetus:
+            type: array
+            items: string
+            example: ["89", "14"]
+          producentis:
+            type: string
+            example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+          priorProbationem:
+            type: string
+            example: "0d84eeb968fdc8abd459c63939d06f2c1d9ca6b113100710056de1767f7bebf8e1897a396e081a7413fa96e0d2c3c3eab2cb8af1e52709c6006f6a3597ab600e"
+          gladiator:
+            type: object
+            properties:
+              probationem:
+                type: string
+                example: "4d52b6741203a0ec4bec75f4798782a869dc4f15f10abea558a235203b324ef819ccebcc24c4e32c15a032612e063f2f58b17ad9b4ee0114f9ccf331c8e301af"
+              interiore:
+                type: object
+                properties:
+                  outputs:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        rationibus:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              probationem:
+                                type: string
+                                example: "00000f97ad023bdc476c7de729ae0bff062cb2e27f339f510641cc290fb6cf36189e46e98ee43a232dd63b1683f056ef89ff75aa2c0c27fd65310f20cc3e26c8"
+                              interiore:
+                                type: object
+                                properties:
+                                  publicaClavis:
+                                    type: string
+                                    example: "040068dd3bb197d5802a11c76b57424b52f5b396c485d76cb1f1d5d61dc480ea4685c503bdbe7e8aebb06e6a3a8cb5e0479ecd18b30918283641045e81ddc195f3b844004a22a9e09d37e4c63cecd75c539165a5eb1e7d57abb98177711e020ae34cf7a77746f16e9d5a8c1a78462cb160bb217821d06bfacd612441c117f27fac95468f23"
+                                  signature:
+                                    type: string
+                                    example: "3081880242018c605f4e031318605c75afa89734ab78f7a5a77588f7d6c56560be65350de5bf67606882792f64d9645bf050844d9b8be5635685bef9c59b20f36fe73fbe4988e602420080069196beabc816767ca551c6215dcc0b914fa6c09e231badb1c496be65232e6741d68196cd8ab31218f67945093b9cf8f69bea3b013387c5030067296ff1f6d1"
+                                  quadrigis:
+                                    type: array
+                                    items: string
+                                    example: "[NOT SUPPORTED]"
+                                  nonce:
+                                    type: string 
+                                    example: "1516426"
+                    defensio:
+                      type: string
+                      example: "16"
+                    impetum:
+                      type: string
+                      example: "fc"
+          solucionis-propter:
+            $ref: '#/definitions/solucionis-propter'
+          fissile-solucionis-propter:
+            $ref: '#/definitions/fissile-solucionis-propter'
+                                     
+                              
+
+
+            
+          
+  solucionis-propter:
+    type: object
+    properties:
+      probationem:
+        type: string
+        example: "000000d8ee78909058f3e4fec45ab0adcf9c38397478ec68a80fccf18dd073ec070b86d78985d0964bc9905fd4a3fc4cb731f17f6c439d8b4b2891ad0ae8926a"
+      interiore-solucionis-propter:
+        type: object
+        properties:
+          nonce:
+            type: string
+            example: "1752065"
+          signature:
+            type: string
+            example: "30818702420186b09e9546c8549e35b650f3807a0a86eb4c52771d5c80cb6f8e377e5e954fe15eddce9d7369d6472288aa1afb50bf1fec1217b7a07738894637b97f271048f2570241383e332134e255ba77d2945d6c1618a46b455892c609470d89bc436a4bd8d1b5b1027770284dd75e90182ae48cd654da9f2b2806cbdeb9d97da77b2304099c6764"
+          interiore-interiore-solucionis-propter:
+            type: object
+            properties:
+              solucionis:
+                type: string
+                example: "040025dc430dcc25436f606063a97bc10c4a8cc04eb506c4fc5796c6453d7e96d5a2f024a7fa6f0d8bc2b21b6ceca2d1d527c55f671533d0b91d51a790396eaaf6108101aac4e49bf38a44d13ee1af10b632ccc006b88d431fe1d295b44d958f348a68f7c62950f479c8ef70120fa5444d5c3e942ff0544c79d3cf9088d352f0e16e323043"
+              accipientis:
+                type: string
+                example: "0401bc395ad2da1be7fb24c7df9d3f2b8a1c850030d163911cf026ae71d500d00d1d84091da5298f21c63b21769e0d4fa8477071a09b18a462370d1c4a1510537e5194006f984be5f3dd25a8da0a2d38dfa54bfe421f6ede012fed310380222668fef7b506967c43c3b1ad9917851c8054adf7714d89f2483a35d5695d9cd17228e09d0c48"
+  fissile-solucionis-propter:
+    type: object
+    properties:
+      probationem:
+        type: string
+        example: "00000e057576b36571fa24274aaf1b519c68daba3a2ca0c3cc2010911ad0c2091bcb01606d45230821f03f58503747838ce985e096f844ada0541e305be6ea93"
+      interiore-fissile-solucionis-propter:
+        type: object
+        properties:
+          nonce:
+            type: string
+            example: "76897"
+          signature:
+            type: string
+            example: "30818802420169b7eebedfffcb48444b4c5a40859a6b46046b11907bb0a0c9a58abb48a890c60fedcfce8a5dec3a2b17dc15d30f0616e820b633536b993f686c076ab21a230ed6024201941512ffd5c41fbfb2cdf6cd6a9ca9f1ff810ad86d4265fbbfeaf8504012dfc86b942d42ed6e201c81d0454f05f806005f9b795fb53444a2a2f6634da29564a7f8"
+          interiore-interiore-fissile-solucionis-propter:
+            type: object
+            properties:
+              solucionis:
+                type: string
+                example: "04001a59d1a9c591b87ab7ada220cf3089a7540afcc6de1c505382cc0345f501e95a3a4d75155fd1f5946e46edf3ea551a6897b67fd138f9142b2057fbcfbeed09dd74017ac7cdfce1bb264514d97114ddf10d76e8b2881709c2030dc4742591764b95bf4294f3619bb688ee35e8a5682a9f98520f5f0581b94be5c71a67f81de9d5bdb1ae"
+              reliquiae:
+                type: string
+                example: "0400a8523f007cd5623e8acd26a54086244865140ec65f0a281d55373d3634ef7fbf50d885aab34952b1d0ffb5d80f7fe5ca94c7b150c1d8e09e30cee339567a3de3a900624a2a35c99e9831674d6c4a505290a5c468b00337b0da69068c37cece5bdd84356ff8d9739fd71273719432e7c5ed2c67d555c28e5c2c20c526cc447af97827de"
+              fixs:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    pod:
+                      type: string
+                      example: "1000"
+                    accipientis:
+                      type: string
+                      example: "040025dc430dcc25436f606063a97bc10c4a8cc04eb506c4fc5796c6453d7e96d5a2f024a7fa6f0d8bc2b21b6ceca2d1d527c55f671533d0b91d51a790396eaaf6108101aac4e49bf38a44d13ee1af10b632ccc006b88d431fe1d295b44d958f348a68f7c62950f479c8ef70120fa5444d5c3e942ff0544c79d3cf9088d352f0e16e323043"
+
+  
+  
+  
+  armad: 
+    type: object
+    properties:
+      exemplar:
+        type: string
+        example: "defensio"
+      telum:
+        type: array
+        items:
+          type: string
+          example: "[56]"
+      probationem:
+        type: string
+        example: "0825f2f083856d3b0b4e8008f270868ee94327d3d4de181b854838d297f52ee2c54548073e264c49e7c9b29e2efd26fcfb23f8cc82641357dca4ed2532f2348d"
+      bigas: 
+        type: string
+        example: "100000000000"
+      vos:
+        type: string
+        example: "100000000000"
+  armai: 
+    type: object
+    properties:
+      exemplar:
+        type: string
+        example: "impetum"
+      telum:
+        type: array
+        items:
+          type: string
+          example: "[7c, c0]"
+      probationem:
+        type: string
+        example: "0825f2f083856d3b0b4e8008f270868ee94327d3d4de181b854838d297f52ee2c54548073e264c49e7c9b29e2efd26fcfb23f8cc82641357dca4ed2532f2348d"
+      bigas: 
+        type: string
+        example: "100000000000"
+      vos:
+        type: string
+        example: "100000000000"
+
+  transactioninput:
+    type: object
+    properties:
+      index:
+        type: integer,
+        example: 0
+      signature:
+        type: string
+        example: "308188024201029dfaf07a60da757a41704096b1a0ecb0ac8d06947e59252cd12045b39048772887818c131faa9246e1b646fa034b4afa72f450ab7aa772a50b168844e8382246024200c7722ca9a528f72db47ffd5e387c076556dff23c7f19effe422704e2bb9be9e3d3bce4a172b4a7ea33f66b85cb4841e4ec2fd22cbd2da0f484a59afdb004d07754"
+      transactioIdentitatis:
+        type: string
+        example: "195459d03f1de4cac1c8af51caea73ff9f1a44e9aac73790b98aeff3f89932da62e4defb14147099d18ca2e720185aba9ac2c295ac523c94df315bceb00ad275"    
+  transactionoutput:
+    type: object
+    properties:
+      publicaClavis: 
+        type: string
+        example: "0009ed797566211aaeee550bf3d0663760ad7752972651da8ceaf1d45206cb93b1e6dbba608f254dfc2e632c070b47f5ff977243ccf7ab995f88d0707b63c547"
+      pod:
+        type: string
+        example: "100000000000000000000"
+
+  receipt:
+    type: object
+    properties:
+      si-remotionem-input:
+        type: null
+        example: null
+      si-remotionem-output:
+        type: object
+        properties:
+          liber:
+            type: bool
+            example: false
+          habereIus:
+            type: string
+            example: "0400f129c4298532ebfa5658c7799ced615eac1c6f9876965f716ab70cc35cba1f54076e0b8b923129bcc8f3462ce639f3c289fb30a0c96e01c2fea24559ca8670c67601dea9523f516e4346451352bb0048f0f64340c530964c5c188b50e993f5ee9d7985f769882cea7e40cd43bb1619c374ba4c9c450e0ea8dda947ec605eabde492581"
+          debetur:
+            type: string
+            example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+          transactioIdentitatis:
+            type: string
+            example: "d7800066c7c70dd82a6f96a3455528b29c243cc338cce9b006476e994599e4dd1612f51542cf5294f048f8248696e7314050dd294ee4243187242830a09618f3"
+          pod:
+            type: string
+            example: "100000000000000000000"
+      siganture-interiore-si-remotionem:
+        type: string
+        example: "30818702414a8a4ecd175cd74f11be71004ecde8fe85d0dab34f17f80e4fabf73eda82f1874d867be6a5d1a045d5aa56163617cd7ee841dac7b7e049967a7326403c9ae6ddf40242014df586b595e098f5a9295c03ffb7a0cc20540f39e3c2e9425121a0b5d061ccd6bbf911e8d12cd3c75414a47bd5e7ccdd388cb6438dc286f8c1eebe5ad49b35e898"
+      nonce:
+        type: string
+        example: "0"
+  si-remotionem:
+    type: object
+    properties:
+      probationem:
+        type: string
+        example: "00001aaf61aa387ff809c0dfc5e31feca90d879c8e311bd5471cf70f363c870422066dd7e90971ebe485341001e79f9ff3397e21bfdbd9cca9ea986bc3658764"
+      interiore:
+        type: object
+        properties:
+          si-remotionem-input:
+            type: null
+            example: null
+          si-remotionem-output:
+            type: object
+            properties:
+              liber:
+                type: bool
+                example: true
+              habereIus:
+                type: string
+                example: "0400f129c4298532ebfa5658c7799ced615eac1c6f9876965f716ab70cc35cba1f54076e0b8b923129bcc8f3462ce639f3c289fb30a0c96e01c2fea24559ca8670c67601dea9523f516e4346451352bb0048f0f64340c530964c5c188b50e993f5ee9d7985f769882cea7e40cd43bb1619c374ba4c9c450e0ea8dda947ec605eabde492581"
+              debetur:
+                type: string
+                example: "040052b7857c7c96aada5ee5cae0c3a21821d09a01e1c258aaa9f4a6fed7ee7c263c20c20eb43f11d4f4cf63bfc049a2df14dab2341c2df4512520805d8bafc55c117c01d19605720a30636b84daa30c7d44c1525413323b3eebebbd2e58f11dc81e38960e1d70274fe6c96cfc988476c5de04578664611e0cf7a743a9d56c293a14819c95"
+              transactioIdentitatis:
+                type: string
+                example: "9357b1f494af412e53135b0182aabb5b8e0e923ebd2a49f90855c51eb1ad91b6ed41e7473f54c7dcc63db9f904aaccd2bef9b550437b5b17693b8eb2b53ca4fa"
+              pod:
+                type: string
+                example: "10000000000000"
+          siganture-interiore-si-remotionem:
+            type: string
+            example: "30818702420172f0bf9562fe63eb2dc812d2f7b9eccf769518f53dc975bb278696c88e031b11a9972e72e3d15a46117e78c2a8c7a736d7143be8c79a86826f0373fb1f1459b45d02410936da069a9d10eab7f0675c4412be1e89b6150d45e58dc3a31e14d06044a4d313dfb19af15b858fdfb4789411aacaf4c942882a5b23ad7262b36c72c16933ffb5"
+          nonce:
+            type: string
+            example: "28779"
+
+  # /profundum-profundis/{publicKey}:
+  #   get:
+  #     summary: "Returns all depths that have to be payed"
+  #     description: "Returns all depths that have to be payed before the private key can send transaction to other accounts again"
+  #     parameters:
+  #       - name: publicKey
+  #         in: path
+  #         required: true
+  #         schema:
+  #           type: string
+  #     responses:
+  #       '200':
+  #         content:
+  #           application/json:
+  #             schema:
+  #               type: array
+  #               items:
+  #                 $ref: '#/definitions/si-remotionem'
