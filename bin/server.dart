@@ -23,7 +23,7 @@ Response _echoHandler(Request request) {
 void main(List<String> args) async {
   // Use any available host or container IP (usually `0.0.0.0`).
   final ip = InternetAddress.anyIPv4;
-  final path = '/root/docs.ocnsens.us/specs/ocnnn.yaml';
+  final path = '/specs/ocnnn.yaml';
   // Configure a pipeline that logs requests.
   // final handler = Pipeline().addMiddleware(SwaggerUI()).addHandler(_router);
   final handler = SwaggerUI(path, title: 'proofofdivisionexplained');
